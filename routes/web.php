@@ -14,7 +14,9 @@ use App\Http\Controllers\SkillController;
 |
 */
 
-Route::get('/', [SkillController::class, 'fetchAll']);
+Route::get('/', [HomeController::class, 'fetchAll']);
+Route::get('/skills', [SkillController::class, 'fetchAll']);
+Route::get('/experience', [ExperienceController::class, 'fetchAll']);
 
 Route::get('/about', function () {
     return view('about');
