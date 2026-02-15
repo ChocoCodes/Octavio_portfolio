@@ -11,6 +11,8 @@ class Project extends Model
     protected $fillable = [
         'title',
         'description',
-        'tech _stack'
+        'tech_stack',
+        'demo_url',
+        'github_url'
     ];
 }

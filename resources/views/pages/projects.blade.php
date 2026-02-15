@@ -8,15 +8,25 @@
     <table class="table table-bordered">
         <thead>
             <tr>
-                <th>Skill</th>
-                <th>Proficiency</th>
+                <th>Title</th>
+                <th>Description</th>
+                <th>Tech Stack</th>
+                <th>Demo</th>
+                <th>Github</th>
             </tr>
         </thead>
         <tbody>
-            @foreach ($skills as $skill)
+            @foreach ($projects as $project)
             <tr>
-                <td>{{ $skill->skill }}</td>
-                <td>{{ $skill->proficiency }}</td>
+                <td>{{ $project->title }}</td>
+                <td>{{ $project->description }}</td>
+                <td>{{ $project->tech_stack }}</td>
+                <td>
+                    <a href={{ $project->demo_url }} target="_blank">Demo</a>
+                </td>
+                <td>
+                    <a href={{ $project->github_url }} target="_blank">Github</a>
+                </td>
             </tr>
             @endforeach
         </tbody>
