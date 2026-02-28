@@ -16,6 +16,7 @@ class ProfileSeeder extends Seeder
         Profile::create([
             "fname" => "John Roland",
             "lname" => "Octavio",
+            "image_filename" => 'octavio.jpg',
             "title" => "Third Year CS Student @ USLS - Bacolod",
             "bio" => "I build clean, practical, and effective solutions. Currently serving as the <b>Chief Technology Officer</b> and was a former <b>Web Development Lead</b> of <i>Google Developer Groups on Campus-USLS.</i>",
             "location" => "Bacolod City, Negros Occidental, PH",

@@ -1,8 +1,8 @@
 @include('layouts.header')
 @include('layouts.navbar')
 
-<main>
+<body class="container-fluid min-vh-100 min-vw-100">
     @yield('content')
-</main>
+</body>
 
 @include('layouts.footer')

@@ -17,7 +17,7 @@ use App\Http\Controllers\ProjectController;
 |
 */
 
-Route::get('/', [HomeController::class, 'fetchAll']);
+Route::get('/', [HomeController::class, 'index']);
 Route::get('/skills', [SkillController::class, 'fetchAll']);
 Route::get('/projects', [ProjectController::class, 'fetchAll']);
 
