@@ -13,7 +13,8 @@ class Profile extends Model
         "lname",
         "title",
         "bio",
+        "location",
         "description",
-        "email"
+        "resume_url"
     ];
 }

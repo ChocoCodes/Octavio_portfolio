@@ -12,6 +12,7 @@ class Project extends Model
         'title',
         'description',
         'tech_stack',
+        'image_url',
         'demo_url',
         'github_url'
     ];

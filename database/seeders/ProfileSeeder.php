@@ -16,10 +16,14 @@ class ProfileSeeder extends Seeder
         Profile::create([
             "fname" => "John Roland",
             "lname" => "Octavio",
-            "title" => "Chief Technology Officer @ GDG-USLS",
-            "bio" => "I build clean, practical, and effective solutions.",
+            "title" => "Third Year CS Student @ USLS - Bacolod",
+            "bio" => "I build clean, practical, and effective solutions. Currently serving as the <b>Chief Technology Officer</b> and was a former <b>Web Development Lead</b> of <i>Google Developer Groups on Campus-USLS.</i>",
             "location" => "Bacolod City, Negros Occidental, PH",
-            "email" => "s2300380@usls.edu.ph"
+            "description" => "I am a third-year Computer Science student working toward becoming a Software Engineer. During my term as the CTO, I supervised departmental projects and initiatives, 
+            including hands-on workshops and collaborative events. As Web Development Lead, I focused on my fundamentals on native web languages before I transitioned to the club's recommended frameworks React and Next.js. 
+            I have a detail-oriented approach to programming to ensure that my projects are of the highest quality possible. Outside of coding, I enjoy building LEGO and engaging in physical activities such as exercising, going to the gym, or practicing Muay Thai. 
+            I also like playing chill games and often dedicate my free time upskilling and exploring new technologies. As of the moment, I am strengthening my full-stack skills and Deep Learning technologies.",
+            "resume_url" => 'https://drive.google.com/file/d/15RlLx6T4VmIiO0gVO_F0aS3TIgHjJUnI/view?usp=sharing'
         ]);
     }
 }

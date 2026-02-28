@@ -5,13 +5,13 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
-class Skill extends Model
+class Contact extends Model
 {
-    protected $table = 'skills';
+    protected $table = 'contacts';
+
     protected $fillable = [
-        'skill',
-        'proficiency',
+        'platform',
         'icon_name',
-        'category'
+        'url'
     ];
 }
