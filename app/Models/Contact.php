@@ -12,6 +12,7 @@ class Contact extends Model
     protected $fillable = [
         'platform',
         'icon_name',
-        'url'
+        'url',
+        'username'
     ];
 }
