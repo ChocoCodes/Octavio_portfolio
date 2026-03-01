@@ -1,6 +1,6 @@
 @extends('layouts.content')
 
-@section('title', 'Home')
+@section('title', 'Home | John Octavio')
 
 @section('content')
 <div class="container d-flex flex-column align-items-center gap-4 py-3" style="width: 85%;">
