@@ -1,35 +1,17 @@
 @extends('layouts.content')
 
-@section('title', 'Project')
+@section('title', 'Projects | John Octavio')
 
 @section('content')
-<div class="container mt-4">
-    <h2>My Skills</h2>
-    <table class="table table-bordered">
-        <thead>
-            <tr>
-                <th>Title</th>
-                <th>Description</th>
-                <th>Tech Stack</th>
-                <th>Demo</th>
-                <th>Github</th>
-            </tr>
-        </thead>
-        <tbody>
-            @foreach ($projects as $project)
-            <tr>
-                <td>{{ $project->title }}</td>
-                <td>{{ $project->description }}</td>
-                <td>{{ $project->tech_stack }}</td>
-                <td>
-                    <a href={{ $project->demo_url }} target="_blank">Demo</a>
-                </td>
-                <td>
-                    <a href={{ $project->github_url }} target="_blank">Github</a>
-                </td>
-            </tr>
-            @endforeach
-        </tbody>
-    </table>
-</div>
+<section class="container-fluid d-flex flex-column align-items-center gap-4 py-3" style="width:85%;">
+    <div class="d-flex flex-column gap-2 text-center">
+        <h1>Featured Projects</h1>
+        <p>Selected projects from my academic and personal work.</p>
+    </div>
+    <div class="d-flex flex-wrap gap-5">
+        @foreach($projects as $project)
+            <x-project-card :title="$project->title" :description="$project->description" :techStack="$project->tech_stack" :imageUrl="$project->image_url" :demoUrl="$project->demo_url" :githubUrl="$project->github_url" />
+        @endforeach
+    </div>
+</section>
 @endsection
