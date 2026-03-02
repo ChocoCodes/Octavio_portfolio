@@ -1,8 +1,9 @@
-@extends('layouts.layout')
+@extends('layouts.content')
 
 @section('title', 'Contact | John Octavio')
+
 @section('content')
-<div class="container-fluid d-flex flex-column align-items-center gap-4 py-3" style="width:85%;">
+<div class="container d-flex flex-column align-items-center gap-4 py-3" style="width: 85%;">
     <div class="d-flex gap-3">
         <img         
             src="{{ asset("assets/images/{$profile->image_filename}") }}" 
@@ -13,7 +14,7 @@
         <div class="d-flex flex-column">
             <p>{{ $profile->fname . ' ' . $profile->lname }}</p>
             <div class="d-flex gap-2">
-                <div class="rounded-full" style="width: 8px; height: 8px;"></div>
+                <div class="rounded-full bg-green" style="width: 8px; height: 8px;"></div>
                 <p>Available</p>
             </div>
         </div>

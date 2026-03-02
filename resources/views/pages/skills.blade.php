@@ -10,12 +10,6 @@
             <h1>What I Work With</h1>
             <p>My go-to stack for developing personal, academic, and experimental projects.</p>
         </div>
-        <div class="d-flex gap-2 flex-wrap justify-content-center">
-            <x-category-label category="All" />
-            @foreach($categories as $category)
-                <x-category-label :category="$category" />
-            @endforeach
-        </div>
         <div class="d-flex gap-3 flex-wrap justify-content-center">
             @foreach($skills as $skill)
                 <x-stack-tile :icon-name="$skill->icon_name" :proficiency="$skill->proficiency" :skill="$skill->skill" />

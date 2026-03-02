@@ -1,3 +1,63 @@
+:root {
+  --main: #F8FAFC;
+  --text-primary: #1E293B;
+  --text-muted: #4B5563;
+  --accent-color: #2563EB;
+  --dot-color: #e0e6ec;
+  --section: #FFFFFF;
+  --slate: #334155;
+}
+
+.border-muted {
+    border-color: var(--text-muted);
+}
+
+.text-slate {
+    color: var(--slate);
+}
+
+.infinite-dots {
+    background-color: var(--bg-white);
+    background-image: radial-gradient(var(--dot-color) 1.25px, transparent 1.25px);
+    background-size: 20px 20px;
+}
+
+.text-green {
+    color: var(--green);
+}
+
+.text-accent {
+    color: var(--accent-color);
+}
+
+.text-muted {
+    color: var(--text-muted);
+}
+
+.text-default {
+    color: var(--main);
+}
+
+.bg-main {
+    background-color: var(--main);
+}
+
+.bg-green {
+    background-color: var(--green);
+}
+
+.bg-surface {
+    background-color: var(--surface-color);
+}
+
+.bg-accent {
+    background-color: var(--accent-color);
+}
+
 h1, h2, h3, h4, h5, h6, p, textarea {
     margin-bottom: 0;
+}
+
+.tracking-wide {
+    letter-spacing: 0.025em;
 }

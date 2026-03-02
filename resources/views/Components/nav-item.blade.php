@@ -1,3 +1,3 @@
-<a href="{{ url($url) }}" class="text-decoration-none">
+<a href="{{ url($url) }}" class="text-decoration-none text-muted">
     {{ $name }}
 </a>

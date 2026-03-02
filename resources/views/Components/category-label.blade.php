@@ -1,1 +1,0 @@
-<button class="filter-btn" data-target="{{ $category }}">{{ $category }}</button>

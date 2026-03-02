@@ -18,7 +18,7 @@ class ProfileSeeder extends Seeder
             "lname" => "Octavio",
             "image_filename" => 'octavio.jpg',
             "title" => "Third Year CS Student @ USLS - Bacolod",
-            "bio" => "I build clean, practical, and effective solutions. Currently serving as the <b>Chief Technology Officer</b> and was a former <b>Web Development Lead</b> of <i>Google Developer Groups on Campus-USLS.</i>",
+            "bio" => "I build clean, practical, and effective solutions. Currently serving as the <b class='text-accent'>Chief Technology Officer</b> and was the former <b class='text-accent'>Web Development Lead</b> of <i>Google Developer Groups on Campus-USLS.</i>",
             "location" => "Bacolod City, Negros Occidental, PH",
             "description" => "I am a third-year Computer Science student working toward becoming a Software Engineer. During my term as the CTO, I supervised departmental projects and initiatives, 
             including hands-on workshops and collaborative events. As Web Development Lead, I focused on my fundamentals on native web languages before I transitioned to the club's recommended frameworks React and Next.js. 
