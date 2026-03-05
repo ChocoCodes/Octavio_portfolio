@@ -1,4 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&family=Sora:wght@100..800&display=swap');
+
 :root {
+  /* COLORS */
   --main: #F8FAFC;
   --text-primary: #1E293B;
   --text-muted: #4B5563;
@@ -6,6 +9,20 @@
   --dot-color: #e0e6ec;
   --section: #FFFFFF;
   --slate: #334155;
+
+  /* FONTS */
+  --font-manrope: 'Manrope', sans-serif;
+  --font-sora: 'Sora', sans-serif;
+}
+
+.font-sora {
+    font-family: var(--font-sora);
+    font-optical-sizing: auto;
+}
+
+.font-manrope {
+    font-family: var(--font-manrope);
+    font-optical-sizing: auto;
 }
 
 .border-muted {
@@ -70,3 +87,65 @@ h1, h2, h3, h4, h5, h6, p, textarea {
     border-bottom: 2px solid var(--text-muted);
     opacity: 80%;
 }
+
+.hover-fill:hover {
+    border: 1px solid var(--accent-color);
+    color: var(--accent-color);
+}
+
+.hover-fill:hover img {
+    filter: brightness(0) saturate(100%) invert(36%) sepia(88%) saturate(964%) hue-rotate(195deg) brightness(89%) contrast(108%);
+}
+
+.hover-scale:hover {
+    transform: scale(1.05);
+}
+
+.hover-scale {
+    transition: transform 0.25s ease-in-out;
+}
+
+.btn-accent,
+.invert {
+    transition: transform 0.25s ease-in-out, opacity 0.25s ease;
+}
+
+.btn-accent:hover {
+    transform: scale(1.05);
+    background-color: #215cda;
+}
+
+.invert:hover {
+    filter: brightness(0) saturate(100%) invert(0%) sepia(0%) saturate(0%) hue-rotate(134deg) brightness(100%) contrast(106%);
+    transform: scale(1.05);
+}
+
+.stack-card {
+    border: 1px solid black;
+    transition: background-color 0.2s ease, border-color 0.2s ease, color 0.2s ease, transform 0.2s ease;
+}
+
+.stack-card:hover {
+    cursor: pointer;
+    border: 1px solid var(--accent-color);
+    background: var(--accent-color);
+    color: var(--main); 
+    transform: translateY(-5px);
+}
+
+.stack-card img {
+    transition: filter 0.2s ease;
+}
+
+.stack-card:hover img {
+    filter: brightness(0) saturate(100%) invert(100%) sepia(99%) saturate(184%) hue-rotate(128deg) brightness(108%) contrast(97%);
+}
+
+.hover-white {
+    color: var(--text-muted);
+}
+
+.stack-card:hover .hover-white {
+    color: var(--main);
+}
+

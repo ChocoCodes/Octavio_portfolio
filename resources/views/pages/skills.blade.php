@@ -6,13 +6,13 @@
 <div class="container-fluid d-flex flex-column align-items-center gap-5 py-3 px-4" style="width:90%;">
     {{-- About Me Section --}}
     <section class="d-flex flex-column gap-3 justify-content-center align-items-center w-100">
-        <h1>About Me</h1>
+        <h1 class="font-sora fw-medium">About Me</h1>
         <p class="text-center tracking-wide text-muted w-100 w-lg-75 fs-5">{!! $description !!}</p>
     </section>
     {{-- Tech Stack Section --}}
     <section class="d-flex flex-column gap-4 gap-lg-5 justify-content-center align-items-center w-100">
         <div class="d-flex flex-column gap-1 text-center">
-            <h1>What I Work With</h1>
+            <h1 class="font-sora fw-medium">What I Work With</h1>
             <p class="text-muted fs-5">My go-to stack for developing personal, academic, and experimental projects.</p>
         </div>
         <div class="col-lg-8">
@@ -28,7 +28,7 @@
     {{-- Certificates Section --}}
     <section class="d-flex flex-column gap-5" style="width: 90%;">
         <div class="d-flex flex-column gap-3 text-center">
-            <h1>Certificates</h1>
+            <h1 class="font-sora fw-medium">Certificates</h1>
             <p class="text-muted fs-5">Certifications from platforms, programs, and trainings I have completed</p>
         </div>
         <div class="row g-5">

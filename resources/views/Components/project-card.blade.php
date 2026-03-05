@@ -19,7 +19,7 @@
                 </a>
             </div>
         </div>
-        <span class="text-muted opacity-75" style="font-size: 14px;">{{ $techStack }}</span>
-        <p class="text-muted opacity-75 fs-6">{{ $description }}</p>
+        <span class="text-muted opacity-75" style="font-size: 16px;">{{ $techStack }}</span>
+        <p class="text-muted opacity-75 fs-5">{{ $description }}</p>
     </div>
 </div>

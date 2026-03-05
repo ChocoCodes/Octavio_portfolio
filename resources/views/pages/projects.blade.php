@@ -5,7 +5,7 @@
 @section('content')
 <section class="container-fluid d-flex flex-column align-items-center gap-4 py-3" style="width:90%;">
     <div class="d-flex flex-column gap-2 text-center">
-        <h1>Featured Projects</h1>
+        <h1 class="font-sora fw-medium">Featured Projects</h1>
         <p class="text-muted fs-5">Selected projects from my academic and personal work.</p>
     </div>
     <div class="row g-5">
