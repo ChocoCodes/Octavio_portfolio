@@ -26,6 +26,10 @@
     color: var(--green);
 }
 
+.text-slate {
+    color: var(--slate);
+}
+
 .text-accent {
     color: var(--accent-color);
 }
@@ -62,6 +66,7 @@ h1, h2, h3, h4, h5, h6, p, textarea {
     letter-spacing: 0.025em;
 }
 
-.certificate-card {
-    width: 47%;
+.divider-muted {
+    border-bottom: 2px solid var(--text-muted);
+    opacity: 80%;
 }

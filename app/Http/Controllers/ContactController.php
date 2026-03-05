@@ -10,7 +10,7 @@ class ContactController extends Controller
 {
     public function index() {
         $contacts = Contact::all();
-        $profile = Profile::select('fname', 'lname', 'image_filename')->first();
+        $profile = Profile::select('fname', 'lname', 'image_filename', 'location')->first();
         return view('pages.contact', compact('contacts', 'profile'));
     }
 }

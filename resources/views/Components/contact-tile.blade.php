@@ -1,9 +1,4 @@
-<div class="d-flex gap-2">
-    <a href="{{ url($url) }}" target="_blank" rel="noopener noreferrer">
-        <img src="{{ asset("assets/svg/{$iconName}") }}" alt="Icon of {{$platform}}" style="width: 24px; height:24px;"/>
-    </a>
-    <span>{{ $username }}</span>
-    <button onclick="copyToClipboard('{{  $username }}', this)">
-        <i class="fa-regular fa-copy"></i>
-    </button>
-</div>
+<a href="{{ url($url) }}" target="_blank" rel="noopener noreferrer" class="text-decoration-none text-slate d-flex gap-3 align-items-center">
+    <img src="{{ asset("assets/svg/{$iconName}") }}" alt="Icon of {{$platform}}" style="width: 24px; height:24px;"/>
+    <span class="fs-5">{{ $platform == "Email" ? $username : $platform }}</span>
+</a>
