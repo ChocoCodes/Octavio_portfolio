@@ -18,9 +18,11 @@ use App\Http\Controllers\ContactController;
 |
 */
 
-Route::get('/', [HomeController::class, 'index']);
-Route::get('/skills', [SkillController::class, 'fetchAll']);
-Route::get('/projects', [ProjectController::class, 'fetchAll']);
-Route::get('/experience', [ExperienceController::class, 'index']);
-Route::get('/contact', [ContactController::class, 'index']);
+Route::middleware('log.visitor')->group(function () {
+    Route::get('/', [HomeController::class, 'index']);
+    Route::get('/skills', [SkillController::class, 'fetchAll']);
+    Route::get('/projects', [ProjectController::class, 'fetchAll']);
+    Route::get('/experience', [ExperienceController::class, 'index']);
+    Route::get('/contact', [ContactController::class, 'index']);
+});
 
