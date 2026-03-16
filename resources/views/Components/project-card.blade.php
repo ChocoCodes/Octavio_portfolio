@@ -17,6 +17,7 @@
                 <a href="{{ $githubUrl }}" target="_blank" rel="noopener noreferrer">
                     <i class="fa-brands fa-github fs-4"></i>
                 </a>
+                <a href="{{ route('projects.edit', $project) }}" class="text-decoration-none text-muted">Edit</a>
             </div>
         </div>
         <span class="text-muted opacity-75" style="font-size: 16px;">{{ $techStack }}</span>

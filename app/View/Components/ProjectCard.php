@@ -5,6 +5,7 @@ namespace App\View\Components;
 use Closure;
 use Illuminate\Contracts\View\View;
 use Illuminate\View\Component;
+use App\Models\Project;
 
 class ProjectCard extends Component
 {
@@ -16,8 +17,9 @@ class ProjectCard extends Component
         public string $description,
         public string $techStack,
         public string $imageUrl,
+        public string $githubUrl,
+        public Project $project,
         public ?string $demoUrl = null,
-        public string $githubUrl
     ){}
 
     /**
